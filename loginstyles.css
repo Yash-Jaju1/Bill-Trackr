@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d3b66; /* Dark Blue */
+    color: #f4f7fa; /* Lightest Blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; /* Ensure the container takes at least the full height */
+    padding: 20px; /* Padding around the form */
+}
+
+/* Login Box */
+.login-box {
+    background-color: #ffffff; /* White */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; /* Ensure the max-width matches the registration box */
+    width: 100%;
+}
+
+/* Heading */
+.login-box h2 {
+    font-size: 28px;
+    color: #0d3b66; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+.login-box h3 {
+    font-size: 28px;
+    color: #0d3b66; /* Dark Blue */
+    margin-bottom: 20px;
+}
+
+/* Form Elements */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0d3b66; /* Dark Blue */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b0c4de; /* Light Blue Border */
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    background-color: #3282b8; /* Medium Blue */
+    color: #ffffff; /* White */
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%; /* Make buttons full width */
+}
+
+/* Button Hover */
+button:hover {
+    background-color: #2872a0; /* Slightly darker Medium Blue */
+    transform: scale(1.05);
+}
+
+/* Link Styling */
+a {
+    color: #3282b8; /* Medium Blue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Login Link */
+.login-link {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #0d3b66; /* Dark Blue */
+}
+
+.login-link a {
+    color: #3282b8; /* Medium Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

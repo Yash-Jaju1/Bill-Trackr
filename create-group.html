@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Group - BillTrackr</title>
+    <link rel="stylesheet" href="formstyles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Create a Group</h1>
+        </div>
+    </header>
+
+    <section class="form-section">
+        <div class="container">
+            <h2>Create a New Group</h2>
+            <form id="create-group-form">
+                <div class="input-group">
+                    <label for="group-name">Group Name</label>
+                    <input type="text" id="group-name" name="group-name" required>
+                </div>
+                <div class="input-group">
+                    <label for="member-usernames">Member Usernames (comma separated)</label>
+                    <input type="text" id="member-usernames" name="member-usernames" required>
+                </div>
+                <button type="submit" class="btn">Create Group</button>
+            </form>
+            <button class="btn" onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BillTrackr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="create-group.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - BillTrackr</title>
+    <link rel="stylesheet" href="dashboardstyles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome, [Username]</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Account Settings</a></li>
+                    <li><a href="#" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="dashboard">
+        <div class="container">
+            <h2>Dashboard</h2>
+
+            <div class="actions">
+                <a href="create-group.html" id="create-group" class="btn">Create a Group</a>
+                <a href="open-group.html" id="open-group" class="btn">Open a Group</a>
+                <a href="add-bill.html" id="add-bill" class="btn">Add a Bill</a>
+            </div>
+
+            <div id="group-details" class="hidden">
+                <h3>Group Details</h3>
+                <!-- This section will be dynamically populated -->
+                <div id="members">
+                    <h4>Members</h4>
+                    <!-- List members here -->
+                </div>
+                <button id="edit-group" class="btn">Edit Group</button>
+                <button id="add-bill-to-group" class="btn">Add a Bill</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BillTrackr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

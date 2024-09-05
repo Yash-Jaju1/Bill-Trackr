@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open a Group - BillTrackr</title>
+    <link rel="stylesheet" href="formstyles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Open a Group</h1>
+        </div>
+    </header>
+
+    <section class="form-section">
+        <div class="container">
+            <h2>Open an Existing Group</h2>
+            <form id="open-group-form">
+                <div class="input-group">
+                    <label for="group-name">Group Name</label>
+                    <input type="text" id="group-name" name="group-name" required>
+                </div>
+                <button type="submit" class="btn">Open Group</button>
+            </form>
+
+            <div id="group-details" class="hidden">
+                <h3>Group Details</h3>
+                <div id="members">
+                    <h4>Members</h4>
+                    <!-- List members here -->
+                </div>
+                <button id="edit-group" class="btn">Edit Group</button>
+                <button id="settle-payments" class="btn">Settle Payments</button>
+                <button id="add-bill-to-group" class="btn">Add a Bill</button>
+            </div>
+
+            <button class="btn" onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BillTrackr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="open-group.js"></script>
+</body>
+</html>

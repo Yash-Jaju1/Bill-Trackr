@@ -1,0 +1,73 @@
+/* General Form Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f7fa;
+}
+
+header {
+    background-color: #0d3b66;
+    padding: 20px 0;
+    color: #f4f7fa;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    margin: 0;
+}
+
+.form-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #b0c4de;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b0c4de;
+    border-radius: 3px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3282b8;
+    color: #f4f7fa;
+    padding: 15px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 10px 0;
+    font-weight: bold;
+    border: 1px solid #3282b8;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2872a0;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #0d3b66;
+    color: #f4f7fa;
+    padding: 20px 0;
+    text-align: center;
+}

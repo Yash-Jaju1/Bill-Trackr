@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f7fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure body takes at least full height */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #0d3b66;
+    padding: 20px 0;
+    color: #f4f7fa;
+    border-bottom: 3px solid #0d3b66;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #f4f7fa;
+    text-decoration: none;
+}
+
+/* Dashboard Section */
+.dashboard {
+    flex: 1; /* Allow dashboard section to grow and push footer to the bottom */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.dashboard h2 {
+    color: #0d3b66;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    width: 100%;
+    max-width: 300px; /* Optional: Set a maximum width for the buttons container */
+    margin: 0 auto; /* Center the button container */
+}
+
+.actions .btn {
+    width: 100%; /* Full width buttons */
+    margin-bottom: 10px; /* Space between buttons */
+    background-color: #3282b8;
+    color: #f4f7fa;
+    padding: 15px 30px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #3282b8;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.actions .btn:hover {
+    background-color: #2872a0;
+    transform: scale(1.05);
+}
+
+#group-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d3b66;
+    color: #f4f7fa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 3px solid #0d3b66;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
