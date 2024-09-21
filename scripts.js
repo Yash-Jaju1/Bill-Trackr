@@ -67,3 +67,31 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+// Function to validate the form
+function validateForm() {
+    // Get the mobile number, new password, and confirm password fields
+    const mobile = document.getElementById('mobile');
+    const newPassword = document.getElementById('new-password');
+    const confirmPassword = document.getElementById('confirm-password');
+
+    // Validate the mobile number for 10 digits
+    if (!/^\d{10}$/.test(mobile.value)) {
+        document.getElementById('mobile-error').style.display = 'block';
+        mobile.focus();
+        return false;
+    } else {
+        document.getElementById('mobile-error').style.display = 'none';
+    }
+
+    // Check if the new password and confirm password match
+    if (newPassword.value !== confirmPassword.value) {
+        document.getElementById('password-error').style.display = 'block';
+        confirmPassword.focus();
+        return false;
+    } else {
+        document.getElementById('password-error').style.display = 'none';
+    }
+
+    return true; // Allow form submission if validation passes
+}

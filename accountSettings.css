@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f7fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #0d3b66;
+    padding: 20px 0;
+    color: #f4f7fa;
+    border-bottom: 3px solid #0d3b66;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #f4f7fa;
+    text-decoration: none;
+}
+
+/* Settings Section */
+.settings {
+    flex: 1;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.settings h2 {
+    color: #0d3b66;
+    margin-bottom: 20px;
+}
+
+.settings form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings .form-group {
+    margin-bottom: 20px;
+}
+
+.settings .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.settings .form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #b0c4de;
+    font-size: 16px;
+}
+
+.settings .form-group button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3282b8;
+    color: #f4f7fa;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.settings .form-group button:hover {
+    background-color: #2872a0;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d3b66;
+    color: #f4f7fa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 3px solid #0d3b66;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Error message styles */
+small.error {
+    color: red;
+    display: none;
+    font-size: 12px;
+}
+
+/* Specific error handling for mobile number and password */
+#mobile-error {
+    display: none;
+}
+
+#password-error {
+    display: none;
+}
