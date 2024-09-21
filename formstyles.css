@@ -70,3 +70,32 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+
+/* Member Statements Styles */
+#member-statements {
+    list-style-type: none;
+    padding: 0;
+}
+
+#member-statements li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Additional Styles for Financial Obligations */
+.amount {
+    font-weight: bold;
+}
+
+.owed {
+    color: #ff4d4d; /* Red for owed amounts */
+}
+
+.gets-back {
+    color: #4caf50; /* Green for getting back amounts */
+}
+
+.member-name {
+    font-weight: normal;
+}

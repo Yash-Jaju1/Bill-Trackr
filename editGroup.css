@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     color: #333;
-    background-color: #f4f7fa;
+    background-color: #f4f7fa; /* Lightest Blue */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,11 +16,11 @@ body {
 
 /* Header Styles */
 header {
-    background-color: #0d3b66;
+    background-color: #0d3b66; /* Dark Blue */
     padding: 20px 0;
-    color: #f4f7fa;
-    border-bottom: 3px solid #0d3b66;
+    color: #f4f7fa; /* Lightest Blue */
     text-align: center;
+    border-bottom: 3px solid #0d3b66;
 }
 
 header h1 {
@@ -40,7 +40,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #f4f7fa;
+    color: #f4f7fa; /* Lightest Blue */
     text-decoration: none;
 }
 
@@ -52,12 +52,13 @@ header nav ul li a {
 }
 
 .edit-group-section h2 {
-    color: #0d3b66;
+    color: #0d3b66; /* Dark Blue */
     margin-bottom: 20px;
 }
 
 .form-group {
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .form-group label {
@@ -70,10 +71,11 @@ header nav ul li a {
     width: 100%;
     padding: 10px;
     border-radius: 3px;
-    border: 1px solid #b0c4de;
+    border: 1px solid #b0c4de; /* Light Blue Border */
     margin-bottom: 10px;
 }
 
+/* Member List */
 #member-list {
     list-style-type: none;
     padding: 0;
@@ -88,7 +90,7 @@ header nav ul li a {
 }
 
 .remove-member-btn {
-    background-color: #ff4d4d;
+    background-color: #ff4d4d; /* Red */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -100,9 +102,10 @@ header nav ul li a {
     background-color: #ff3333;
 }
 
+/* Button Styles */
 .btn {
-    background-color: #3282b8;
-    color: #f4f7fa;
+    background-color: #3282b8; /* Medium Blue */
+    color: #f4f7fa; /* Lightest Blue */
     padding: 10px 20px;
     border-radius: 3px;
     text-decoration: none;
@@ -113,7 +116,7 @@ header nav ul li a {
 }
 
 .btn:hover {
-    background-color: #2872a0;
+    background-color: #2872a0; /* Slightly darker blue */
     transform: scale(1.05);
 }
 
@@ -138,6 +141,7 @@ header nav ul li a {
     width: 400px;
     text-align: left;
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .close {
@@ -154,8 +158,8 @@ header nav ul li a {
 
 /* Footer Styles */
 footer {
-    background-color: #0d3b66;
-    color: #f4f7fa;
+    background-color: #0d3b66; /* Dark Blue */
+    color: #f4f7fa; /* Lightest Blue */
     padding: 20px 0;
     text-align: center;
     border-top: 3px solid #0d3b66;
