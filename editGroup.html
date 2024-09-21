@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Group - BillTrackr</title>
+    <link rel="stylesheet" href="dashboardstyles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Edit Group</h1>
+            <nav>
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="index.html" id="logout">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="edit-group-section">
+        <div class="container">
+            <h2>Edit Group Details</h2>
+
+            <form id="edit-group-form">
+                <!-- Group Name (Optional) -->
+                <div class="form-group">
+                    <label for="group-name">Group Name</label>
+                    <input type="text" id="group-name" name="group-name" placeholder="Enter new group name">
+                </div>
+
+                <!-- Group Members -->
+                <div class="form-group">
+                    <h3>Current Members</h3>
+                    <ul id="member-list">
+                        <!-- Example of member entries -->
+                        <li>John Doe <button type="button" class="remove-member-btn">Remove</button></li>
+                        <li>Jane Smith <button type="button" class="remove-member-btn">Remove</button></li>
+                    </ul>
+                    <button type="button" id="add-member-btn" class="btn">Add Member</button>
+                </div>
+
+                <!-- Submit Changes -->
+                <button type="submit" class="btn">Update Group</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Add Member Popup -->
+    <div id="add-member-popup" class="popup hidden">
+        <div class="popup-content">
+            <span id="close-popup" class="close">&times;</span>
+            <h3>Add Member</h3>
+            <form id="add-member-form">
+                <div class="form-group">
+                    <label for="new-member-username">Enter Username:</label>
+                    <input type="text" id="new-member-username" name="new-member-username" placeholder="Username" required>
+                </div>
+                <button type="submit" class="btn">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 BillTrackr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="editGroup.js"></script>
+</body>
+</html>
