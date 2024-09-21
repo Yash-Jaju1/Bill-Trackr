@@ -1,30 +1,30 @@
 // Handle tilt animation for cards
-document.querySelectorAll('.feature-item, .step-item').forEach(card => {
-    card.addEventListener('mousemove', handleMouseMove);
-    card.addEventListener('mouseleave', handleMouseLeave);
-});
+// document.querySelectorAll('.feature-item, .step-item').forEach(card => {
+//     card.addEventListener('mousemove', handleMouseMove);
+//     card.addEventListener('mouseleave', handleMouseLeave);
+// });
 
-function handleMouseMove(event) {
-    const card = event.currentTarget;
-    const cardRect = card.getBoundingClientRect();
-    const cardWidth = cardRect.width;
-    const cardHeight = cardRect.height;
+// function handleMouseMove(event) {
+//     const card = event.currentTarget;
+//     const cardRect = card.getBoundingClientRect();
+//     const cardWidth = cardRect.width;
+//     const cardHeight = cardRect.height;
 
-    const centerX = cardRect.left + cardWidth / 2;
-    const centerY = cardRect.top + cardHeight / 2;
+//     const centerX = cardRect.left + cardWidth / 2;
+//     const centerY = cardRect.top + cardHeight / 2;
 
-    const deltaX = event.clientX - centerX;
-    const deltaY = event.clientY - centerY;
+//     const deltaX = event.clientX - centerX;
+//     const deltaY = event.clientY - centerY;
 
-    const tiltX = (deltaY / cardHeight) * 15; // Adjust the tilt intensity
-    const tiltY = -(deltaX / cardWidth) * 15;
+//     const tiltX = (deltaY / cardHeight) * 15; // Adjust the tilt intensity
+//     const tiltY = -(deltaX / cardWidth) * 15;
 
-    card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
-}
+//     card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+// }
 
-function handleMouseLeave(event) {
-    event.currentTarget.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
-}
+// function handleMouseLeave(event) {
+//     event.currentTarget.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+// }
 
 // Call the checkLoginStatus function on page load
 document.addEventListener("DOMContentLoaded", function() {
